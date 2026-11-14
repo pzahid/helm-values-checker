@@ -1,0 +1,11 @@
+coordinator:
+  replicas: 1
+  resources:
+    requests: {cpu: "4", memory: 16Gi}
+executor:
+  replicas: 0
+  resources:
+    requests: {cpu: "8", memory: 32Gi}
+    limits: {cpu: "8", memory: 32Gi}
+metastore:
+  adminPassword: "hunter2"
